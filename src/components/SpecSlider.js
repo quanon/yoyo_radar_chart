@@ -20,7 +20,6 @@ const SpecSlider = ({
 
     setValue(v);
   };
-  const descriptionFontSize = description.length <= 15 ? '0.6rem' : '0.55rem';
 
   return (
     <Box>
@@ -28,7 +27,7 @@ const SpecSlider = ({
         {label}
       </Typography>
       <Typography variant="caption" gutterBottom sx={{
-        fontSize: descriptionFontSize, display: 'block', mb: 0, minHeight: '16px'
+        fontSize: '0.8rem', display: 'block', mb: 0, minHeight: '16px'
       }}>
         {description}
       </Typography>
