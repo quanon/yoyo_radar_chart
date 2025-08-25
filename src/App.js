@@ -14,33 +14,28 @@ import '@fontsource/roboto/700.css';
 
 const axises = [
   {
-    label: '維持力',
-    description: 'いいフィーリングの持続性',
+    label: '安定性',
+    description: 'Stability',
     defaultValue: 3
   },
   {
-    label: 'DENSE',
-    description: '存在感 + 柔らかさ',
+    label: 'コントロール',
+    description: 'Controll',
     defaultValue: 3
   },
   {
-    label: 'FLOATY',
-    description: '軽快さ + ソリッド感',
+    label: '加速性',
+    description: 'Acceralation',
     defaultValue: 3
   },
   {
-    label: '投げ戻り',
-    description: '投げ出しとバインド時の心地よさ',
+    label: '最高速度',
+    description: 'Max speed',
     defaultValue: 3
   },
   {
-    label: 'タッチ',
-    description: 'ストリングヒット時の感触のよさ',
-    defaultValue: 3
-  },
-  {
-    label: 'フィット',
-    description: '形状・サイズが起因する持ち心地のよさ',
+    label: '回転力',
+    description: 'Rotation power',
     defaultValue: 3
   }
 ];
