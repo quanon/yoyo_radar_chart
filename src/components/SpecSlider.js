@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import Typography from '@mui/material/Typography';
 
-const marks = [0, 1, 2, 3, 4, 5].map((n) => ({ value: n }));
+const marks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => ({ value: n }));
 const isIOS = () => {
   const { userAgent } = navigator;
 
@@ -34,10 +34,10 @@ const SpecSlider = ({
       <Slider
         key={`slider-${index}`}
         value={value}
-        step={0.5}
+        step={1}
         marks={marks}
         min={0}
-        max={5}
+        max={10}
         size="small"
         onChange={onChangeSlider}
         onChangeCommitted={

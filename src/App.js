@@ -16,27 +16,27 @@ const axises = [
   {
     label: '安定性',
     description: 'Stability',
-    defaultValue: 3
+    defaultValue: 5
   },
   {
     label: 'コントロール',
     description: 'Controll',
-    defaultValue: 3
+    defaultValue: 5
   },
   {
     label: '加速性',
     description: 'Acceralation',
-    defaultValue: 3
+    defaultValue: 5
   },
   {
     label: '最高速度',
     description: 'Max speed',
-    defaultValue: 3
+    defaultValue: 5
   },
   {
     label: '回転力',
     description: 'Rotation power',
-    defaultValue: 3
+    defaultValue: 5
   }
 ];
 

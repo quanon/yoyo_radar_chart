@@ -41,7 +41,7 @@ const YoyoRadarChart = ({ labels, values }) => {
       >
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" tick={<Tick />} />
-        <PolarRadiusAxis angle={18} domain={[0, 5]} tickCount={6} tick={{ fontSize: '0.6rem' }} />
+        <PolarRadiusAxis angle={18} domain={[0, 10]} tickCount={6} tick={{ fontSize: '0.6rem' }} />
         <Radar
           dataKey="A"
           stroke="#1976d2"
