@@ -6,7 +6,7 @@ import SpecSlider from './components/SpecSlider';
 import Footer from './components/Footer';
 import { useQueryState } from './useQueryState';
 import Box from '@mui/material/Box';
-import Grid from '@mui/system/Grid';
+import Grid2 from '@mui/material/Grid2';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -51,21 +51,21 @@ const App = () => {
 
   return (
     <Box sx={{ px: 1.5 }}>
-      <Grid container rowSpacing={0.5} columnSpacing={2}>
-        <Grid size={2} />
-        <Grid size={8}>
+      <Grid2 container rowSpacing={0.5} columnSpacing={2}>
+        <Grid2 size={2} />
+        <Grid2 size={8}>
           <Box display="flex" alignItems="center" justifyContent="center" pt={1}>
             <Box width={200}>
               <YoyoName name={name} setName={setName} />
             </Box>
           </Box>
-        </Grid>
-        <Grid size={2} />
-        <Grid size={12}>
+        </Grid2>
+        <Grid2 size={2} />
+        <Grid2 size={12}>
           <YoyoRadarChart labels={axises.map((axis) => axis.label)} values={values} />
-        </Grid>
+        </Grid2>
         {axises.map((axis, i) => (
-            <Grid size={6} key={`slider-wrapper-${i}`}>
+            <Grid2 size={6} key={`slider-wrapper-${i}`}>
               <SpecSlider
                 index={i}
                 label={axis.label}
@@ -73,12 +73,12 @@ const App = () => {
                 value={values[i]}
                 setValue={setValueAt(i)}
               />
-            </Grid>
+            </Grid2>
         ))}
-        <Grid size={12}>
+        <Grid2 size={12}>
           <Footer />
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
     </Box>
   );
 };
