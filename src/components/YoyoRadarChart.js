@@ -16,14 +16,32 @@ const YoyoRadarChart = ({ labels, values }) => {
     A: values[i]
   }));
 
+  const Tick = (props) => {
+    const { x, y, payload, textAnchor, index } = props;
+
+    return (
+      <text
+        x={x}
+        y={y}
+        textAnchor={textAnchor}
+        dominantBaseline="central"
+        fontSize={12}
+        fill="#808080"
+        dx={index === 1 ? -40 : 0}
+      >
+        {payload.value}
+      </text>
+    );
+  };
+
   return (
     <ResponsiveContainer>
       <RadarChart
         data={data}
       >
         <PolarGrid />
-        <PolarAngleAxis dataKey="subject" tick={{ fontSize: '0.8rem' }} />
-        <PolarRadiusAxis angle={30} domain={[0, 5]} tickCount={6} tick={{ fontSize: '0.8rem' }} />
+        <PolarAngleAxis dataKey="subject" tick={<Tick />} />
+        <PolarRadiusAxis angle={18} domain={[0, 5]} tickCount={6} tick={{ fontSize: '0.6rem' }} />
         <Radar
           dataKey="A"
           stroke="#1976d2"
