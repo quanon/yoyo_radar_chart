@@ -9,7 +9,7 @@ import {
   ResponsiveContainer
 } from 'recharts';
 
-const KimochiiiRadarChart = ({ labels, values }) => {
+const YoyoRadarChart = ({ labels, values }) => {
   const data = labels.map((label, i) => ({
     subject: label,
     fullMark: 5,
@@ -35,9 +35,9 @@ const KimochiiiRadarChart = ({ labels, values }) => {
   );
 };
 
-KimochiiiRadarChart.propTypes = {
+YoyoRadarChart.propTypes = {
   labels: PropTypes.array.isRequired,
   values: PropTypes.array.isRequired
 };
 
-export default KimochiiiRadarChart;
+export default YoyoRadarChart;

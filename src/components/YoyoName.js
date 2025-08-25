@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TextField from '@mui/material/TextField';
 
-const KimochiiiYoyoName = ({ name, setName }) => (
+const YoyoName = ({ name, setName }) => (
   <TextField
     label="Yo-Yo"
     variant="standard"
@@ -16,9 +16,9 @@ const KimochiiiYoyoName = ({ name, setName }) => (
   />
 );
 
-KimochiiiYoyoName.propTypes = {
+YoyoName.propTypes = {
   name: PropTypes.string,
   setName: PropTypes.func.isRequired
 };
 
-export default KimochiiiYoyoName;
+export default YoyoName;

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import KimochiiiYoyoName from './components/KimochiiiYoyoName';
-import KimochiiiRadarChart from './components/KimochiiiRadarChart';
-import KimochiiiSlider from './components/KimochiiiSlider';
-import KimochiiiFooter from './components/KimochiiiFooter';
+import YoyoName from './components/YoyoName';
+import YoyoRadarChart from './components/YoyoRadarChart';
+import SpecSlider from './components/SpecSlider';
+import Footer from './components/Footer';
 import { useQueryState } from './useQueryState';
 import Box from '@mui/material/Box';
 import Grid from '@mui/system/Grid';
@@ -61,17 +61,17 @@ const App = () => {
         <Grid size={8}>
           <Box display="flex" alignItems="center" justifyContent="center" pt={1}>
             <Box width={200}>
-              <KimochiiiYoyoName name={name} setName={setName} />
+              <YoyoName name={name} setName={setName} />
             </Box>
           </Box>
         </Grid>
         <Grid size={2} />
         <Grid size={12}>
-          <KimochiiiRadarChart labels={axises.map((axis) => axis.label)} values={values} />
+          <YoyoRadarChart labels={axises.map((axis) => axis.label)} values={values} />
         </Grid>
         {axises.map((axis, i) => (
             <Grid size={6} key={`slider-wrapper-${i}`}>
-              <KimochiiiSlider
+              <SpecSlider
                 index={i}
                 label={axis.label}
                 description={axis.description}
@@ -81,7 +81,7 @@ const App = () => {
             </Grid>
         ))}
         <Grid size={12}>
-          <KimochiiiFooter />
+          <Footer />
         </Grid>
       </Grid>
     </Box>

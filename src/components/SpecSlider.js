@@ -11,7 +11,7 @@ const isIOS = () => {
   return userAgent.indexOf('iPhone') >= 0 || userAgent.indexOf('iPad') >= 0 || userAgent.indexOf('iPod') >= 0;
 };
 
-const KimochiiiSlider = ({
+const SpecSlider = ({
   index, label, description, value, setValue
 }) => {
   const onChangeSlider = (e, v) => {
@@ -54,7 +54,7 @@ const KimochiiiSlider = ({
   );
 };
 
-KimochiiiSlider.propTypes = {
+SpecSlider.propTypes = {
   index: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -62,4 +62,4 @@ KimochiiiSlider.propTypes = {
   setValue: PropTypes.func.isRequired
 };
 
-export default KimochiiiSlider;
+export default SpecSlider;
